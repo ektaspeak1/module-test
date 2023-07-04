@@ -34,9 +34,9 @@ document.querySelector("#student-form").addEventListener("submit",(e) =>{
     //get form values
 
 
-    const name = document.querySelector("#Name").value;
-    const email = document.querySelector("#Email").value;
-    const gpa = document.querySelector("#Gpa").value;
+    const name = document.querySelector("#name").value;
+    const email = document.querySelector("#email").value;
+    const gpa = document.querySelector("#gpa").value;
     const age = document.querySelector("#age").value;
     const degree = document.querySelector("#degree").value;
 
@@ -59,8 +59,8 @@ document.querySelector("#student-form").addEventListener("submit",(e) =>{
             <td>${degree}</td>
             <td>
 
-            <a href="#" class="btn btn-warning btn-sm edit"><img src=></a>
-           <a href="#" class="btn btn-warning btn-sm edit"><img src=></a>
+            <a href="#" class="btn btn-warning btn-sm edit"><img src="icons8-edit-30.png"></a>
+           <a href="#" class="btn btn-warning btn-sm edit"><img src="icons8-delete-30.png"></a>
 
             `;
             list.appendChild(row);
@@ -86,7 +86,7 @@ document.querySelector("#student-list").addEventListener("click",(e) =>{
     target = e.target;
     if(target.classList.contains("edit")){
         selectedRow = target.parentElement.parentElement;
-        document.querySelector("#Name").value = selectedRow.children[0].textContent;
+        document.querySelector("#name").value = selectedRow.children[0].textContent;
         document.querySelector("#email").value = selectedRow.children[1].textContent;
         document.querySelector("#gpa").value = selectedRow.children[2].textContent;
         document.querySelector("#age").value = selectedRow.children[3].textContent;
