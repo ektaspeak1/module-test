@@ -60,7 +60,7 @@ document.querySelector("#student-form").addEventListener("submit",(e) =>{
             <td>
 
             <a href="#" class="btn btn-warning btn-sm edit"><img src="icons8-edit-30.png"></a>
-           <a href="#" class="btn btn-warning btn-sm edit"><img src="icons8-delete-30.png"></a>
+           <a href="#" class="btn btn-warning btn-sm delete"><img src="icons8-delete-30.png"></a>
 
             `;
             list.appendChild(row);
